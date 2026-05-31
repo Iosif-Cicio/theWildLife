@@ -25,3 +25,11 @@ Open http://localhost:3000
 ## Testing
 
 Sign in with any Google account. New users are automatically registered as guests on first login.
+
+## Future improvements
+
+- Account deletion (GDPR compliance)
+- Email notifications for bookings
+- Admin dashboard for lodge owners
+- Image galleries on cabin detail pages
+
