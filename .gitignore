@@ -22,7 +22,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# local env files (CRITICAL - protects secrets)
+# local env files (protects the secrets)
 .env*.local
 .env
 
