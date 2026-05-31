@@ -1,21 +1,27 @@
-Welcome to my project "The Wild Life" 👋
+# The Wild Life
 
+A hotel booking platform built with Next.js 14, Supabase, and NextAuth.
 
-+++Installation+++
+Live: https://the-wild-life.vercel.app
 
-To run and test the project, install dependencies with:
+## Local Development
 
-"npm install"
+```bash
+npm install
+npm run dev
+```
 
-Wait until the node_modules & .next is installed.
-...followed by:
+Open http://localhost:3000
 
-"npm run dev"
+## Tech Stack
 
-...to start the development server localhost:3000
+- Next.js 14 (App Router)
+- React 18
+- Supabase (PostgreSQL + Auth)
+- NextAuth.js with Google OAuth
+- Tailwind CSS
+- Deployed on Vercel
 
-+++Testing+++
-To test the project, use the following Google account:
+## Testing
 
-Email: klaus.kleber11191@gmail.com
-Pin: 1234passwort
+Sign in with any Google account. New users are automatically registered as guests on first login.
