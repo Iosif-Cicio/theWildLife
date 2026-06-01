@@ -4,20 +4,21 @@ import Image from "next/image";
 import Link from "next/link";
 import { UsersIcon } from "@heroicons/react/24/solid";
 
-function CabinCard({ cabin }) {
+function CabinCard({ cabin, index }) {
   const { id, name, maxCapacity, regularPrice, discount, image } = cabin;
 
   return (
-    <div className="flex border-primary-800 border">
-      <div className="flex-1 relative">
-        <Image
-          src={image}
-          fill
-          sizes="(max-width: 600px) 100vw, (max-width: 1200px) 70vw, 40vw"
-          alt={`Cabin ${name}`}
-          className="object-cover border-r border-primary-800"
-        />
-      </div>
+      <div className="flex border-primary-800 border">
+        <div className="flex-1 relative aspect-[3/2]">
+          <Image
+              src={image}
+              fill
+              priority={index < 4}
+              sizes="(max-width: 600px) 100vw, (max-width: 1200px) 70vw, 40vw"
+              alt={`Cabin ${name}`}
+              className="object-cover border-r border-primary-800"
+          />
+        </div>
 
       <div className="flex-grow">
         <div className="pt-5 pb-4 px-7 bg-primary-950">

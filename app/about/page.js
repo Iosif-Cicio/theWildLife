@@ -47,6 +47,7 @@ export default async function Page() {
                 src={image1}
                 alt="Family sitting around a fire pit in front of cabin"
                 placeholder="blur"
+                priority
                 quality={80}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="w-full object-cover"

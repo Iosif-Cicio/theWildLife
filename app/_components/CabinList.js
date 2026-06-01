@@ -27,8 +27,8 @@ async function CabinList({ filter }) {
   //Renders the list of CabinCard components based on the result of displayedCabins.
   return (
       <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 xl:gap-14">
-        {displayedCabins.map((cabin) => (
-            <CabinCard cabin={cabin} key={cabin.id} />
+        {displayedCabins.map((cabin, index) => (
+            <CabinCard cabin={cabin} index={index} key={cabin.id} />
         ))}
       </div>
   );
