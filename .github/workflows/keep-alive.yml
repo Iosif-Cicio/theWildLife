@@ -1,0 +1,15 @@
+name: Keep Supabase Alive
+
+on:
+  schedule:
+    - cron: '0 12 * * *'  # daily ping at 12:00 to keep the db alive
+  workflow_dispatch:       # allows manual trigger from GitHub UI
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping the live site
+        run: |
+          curl -f -s -o /dev/null -w "Site responded with HTTP %{http_code}\n" https://the-wild-life.vercel.app/cabins
+          echo "Ping completed at $(date)"
